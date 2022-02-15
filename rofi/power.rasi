@@ -1,0 +1,20 @@
+configuration {
+  location: 0;
+}
+
+* {
+    foreground:                  rgba ( 248, 248, 242, 100 % );
+    alternate-normal-background: rgba ( 39, 40, 34, 100 % );
+    background:                  rgba ( 39, 40, 34, 85 % );
+    selected-normal-background:  rgba ( 20, 20, 17, 100 % );
+}
+window {
+    background-color: @background;
+    border:           1;
+    border-color: #696969;
+    padding:          20;
+}
+mainbox {
+    border:  0;
+    padding: 0;
+}
