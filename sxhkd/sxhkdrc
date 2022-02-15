@@ -14,6 +14,10 @@ super + alt + n
 super + alt + f
 	firefox
 
+# Atom
+super + alt + a
+	atom
+
 # program launcher
 super + shift + d
 	rofi -show run -theme Monokai
