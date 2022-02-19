@@ -36,6 +36,8 @@ height = 27
 radius = 0
 fixed-center = false
 bottom = false
+separator = .
+
 
 background = ${colors.background}
 foreground = ${colors.foreground}
@@ -64,7 +66,7 @@ modules-left = powermenu menu bspwm xwindow
 ;modules-center = mpd
 modules-center = ff nautilus terminal atom
 ;modules-right = filesystem xbacklight alsa pulseaudio xkeyboard memory cpu wlan eth temperature date powermenu battery
-modules-right = date xkeyboard cpu temperature battery
+modules-right = date xkeyboard cpu memory temperature battery
 
 tray-position = right
 tray-padding = 10
@@ -122,10 +124,10 @@ blacklist-0 = num lock
 
 format-prefix = " "
 format-prefix-foreground = ${colors.foreground-alt}
-format-prefix-underline = ${colors.secondary}
+;format-prefix-underline = ${colors.secondary}
 
 label-layout = %layout%
-label-layout-underline = ${colors.secondary}
+;label-layout-underline = ${colors.secondary}
 
 label-indicator-padding = 2
 label-indicator-margin = 1
@@ -292,7 +294,7 @@ type = internal/cpu
 interval = 2
 format-prefix = " "
 format-prefix-foreground = ${colors.foreground-alt}
-format-underline = #f90000
+;format-underline = #f90000
 label = %percentage:2%%
 
 [module/memory]
@@ -300,7 +302,7 @@ type = internal/memory
 interval = 2
 format-prefix = " "
 format-prefix-foreground = ${colors.foreground-alt}
-format-underline = #4bffdc
+;format-underline = #4bffdc
 label = %percentage_used%%
 
 [module/wlan]
@@ -419,7 +421,7 @@ adapter = ACAD
 full-at = 98
 
 format-charging = <animation-charging> <label-charging>
-format-charging-underline = #ffb52a
+;format-charging-underline = #ffb52a
 
 format-discharging = <animation-discharging> <label-discharging>
 format-discharging-underline = ${self.format-charging-underline}
@@ -451,13 +453,14 @@ thermal-zone = 0
 warn-temperature = 60
 
 format = <ramp> <label>
-format-underline = #f50a4d
+;format-underline = #f50a4d
 format-warn = <ramp> <label-warn>
-format-warn-underline = ${self.format-underline}
+;format-warn-underline = ${self.format-underline}
 
 label = %temperature-c%
 label-warn = %temperature-c%
 label-warn-foreground = ${colors.secondary}
+
 
 ramp-0 = 
 ramp-1 = 
