@@ -1,5 +1,6 @@
 /*
 /*/
+!apps_install.sh
 !.gitignore
 !/bspwm/
 !/polybar/

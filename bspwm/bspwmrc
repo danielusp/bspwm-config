@@ -7,15 +7,13 @@ $HOME/.config/polybar/launch.sh
 feh --bg-fill $HOME/.config/img/penguin-linux-wallpaper-red-edited-by-me-created-by-uatlas-ark-1920×1080.jpg
 picom --config $HOME/.config/picom/picom.conf &
 
-#bspc monitor -d I II III IV V VI VII VIII IX X
 bspc monitor -d I II III IV V
 
 
-#bspc config border_width         0
-bspc config window_gap          20
+bspc config window_gap          10
 bspc config border_width 				1
 bspc config focused_border_color '#dc143c'
-bspc config normal_border_color '#000'
+bspc config normal_border_color '#660000'
 
 bspc config split_ratio          0.5
 bspc config borderless_monocle   true
